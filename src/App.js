@@ -1,11 +1,21 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import UseTable from '../tables/UserTable';
 
-export default function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div className="container">
+      <h1>CRUD App with Hooks</h1>
+      <div className="flex-row">
+        <div className="flex-large">
+          <h2>Add user</h2>
+        </div>
+        <div className="flex-large">
+          <h2>View users</h2>
+          <UseTable />
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default App;
