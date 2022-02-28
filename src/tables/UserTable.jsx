@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const UserTable = () => (
+const UserTable = (props) => (
   <table>
     <thead>
       <tr>
@@ -20,6 +20,6 @@ const UserTable = () => (
       </tr>
     </tbody>
   </table>
-)
+);
 
-export default UserTable
+export default UserTable;
